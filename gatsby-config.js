@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: '/qlixer.github.io',
     siteMetadata: {
       title: `Pinardy Yang`,
       author: '@pinardy',
@@ -20,5 +21,13 @@ module.exports = {
           pathToConfigModule: `src/utils/typography.js`,
         },
       },
+      {
+        resolve: 'gatsby-plugin-github-pages',
+        options: {
+          publishOptions: {
+            /* ... */
+          }
+        }
+      }
     ],
   };
